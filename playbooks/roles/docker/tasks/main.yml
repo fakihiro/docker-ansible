@@ -1,0 +1,6 @@
+---
+- name: Dockerコンテナを起動
+  local_action: docker image={{ base_image }} name={{ docker_hostname }} detach=yes tty=yes command=/bin/bash
+
+- name: ホストを追加
+  add_host: name={{ docker_hostname }}

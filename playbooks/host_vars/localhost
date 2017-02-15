@@ -1,0 +1,2 @@
+base_image: centos:6
+docker_hostname: web-server

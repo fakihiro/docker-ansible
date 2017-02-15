@@ -1,0 +1,3 @@
+[docker-ansible]
+localhost  ansible_connection=local
+web-server ansible_connection=docker
